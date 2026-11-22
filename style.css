@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a3a 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00d4ff, #7b2ffd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tagline {
+    color: #8888aa;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.status-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.status-connected {
+    background: rgba(46, 213, 115, 0.08);
+    border-color: rgba(46, 213, 115, 0.2);
+}
+
+.status-indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff4757;
+    margin: 0 auto 15px;
+    box-shadow: 0 0 10px #ff4757;
+    transition: all 0.3s ease;
+}
+
+.status-connected .status-indicator {
+    background: #2ed573;
+    box-shadow: 0 0 20px #2ed573;
+}
+
+#statusText {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+#statusSubtext {
+    color: #8888aa;
+    font-size: 13px;
+}
+
+.connect-btn {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #00d4ff, #7b2ffd);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 30px;
+}
+
+.connect-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+
+.connect-btn:active {
+    transform: scale(0.98);
+}
+
+.location-section {
+    margin-bottom: 25px;
+}
+
+.location-section h3 {
+    font-size: 14px;
+    color: #8888aa;
+    margin-bottom: 10px;
+}
+
+.server-select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.info-panel {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: #8888aa;
+    font-size: 13px;
+}
+
+.value {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
